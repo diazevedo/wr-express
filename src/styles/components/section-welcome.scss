@@ -1,0 +1,26 @@
+.welcome {
+  // background-color: #676;
+  width: 74%;
+  margin: 0 auto;
+
+  .description {
+    width: 80%;
+    // text-align: justify;
+    color: $text-description;
+    font-size: 2.5em;
+    font-weight: 300;
+  }
+
+  h3 {
+    margin-top: 30px;
+    text-align: center;
+    color: $text-primary;
+  }
+
+  .phone {
+    color: $text-primary;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.25em;
+  }
+}

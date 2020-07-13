@@ -1,0 +1,119 @@
+.header {
+  padding: 1em 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navigation {
+    & .menu-toogle {
+      display: none;
+    }
+    & .menu-toogle:checked ~ .menu-label {
+      z-index: 3;
+    }
+
+    & .menu-toogle:checked ~ .menu-label > .menu-hamburger {
+      background-color: transparent;
+    }
+
+    & .menu-toogle:checked ~ .menu-label > .menu-hamburger:after {
+      transform: rotate(45deg);
+      top: 0;
+    }
+
+    & .menu-toogle:checked ~ .menu-label .menu-hamburger:before {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+
+    & .menu-toogle:checked ~ .navigation-list {
+      transform: translateX(0);
+    }
+
+    & > .menu-label {
+      cursor: pointer;
+
+      width: 40px;
+      height: 40px;
+
+      display: block;
+
+      position: relative;
+
+      user-select: none;
+
+      & > .menu-hamburger {
+        display: block;
+        width: 80%;
+        height: 2px;
+        background: $bg-primary;
+        position: relative;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        transition: all 0.2s ease-out;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: $bg-primary;
+          position: absolute;
+          transition: all 0.2s ease-out;
+        }
+
+        &::before {
+          top: -10px;
+        }
+
+        &::after {
+          top: 10px;
+        }
+      }
+    }
+
+    & > .navigation-list {
+      background: change-color($color: $bg-secondary, $alpha: 1);
+
+      width: 100vw;
+      position: absolute;
+      right: 0;
+
+      top: 0px;
+      padding-top: 70px;
+      transform: translateX(100%);
+      transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
+      box-shadow: 0px 1em 20px rgba(229, 57, 69, 0.7);
+    }
+
+    & > .navigation-list .navigation-list-item {
+      font-size: 22px;
+      transition: all 0.2s linear;
+
+      &:hover,
+      &focus {
+        background: darken($bg-secondary, 20%);
+        transform: scale(1.05);
+      }
+    }
+
+    .navigation-list-item-link {
+      display: block;
+      padding: 35px;
+      text-transform: uppercase;
+      text-align: center;
+      color: $text-primary;
+      // border: 0.25em solid #fff;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+
+      &:active {
+        transform: translateY(5px);
+      }
+    }
+  }
+}
