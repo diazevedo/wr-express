@@ -4,6 +4,11 @@
   justify-content: space-between;
   align-items: center;
 
+  .logo {
+    width: 50%;
+    align-self: end;
+  }
+
   .navigation {
     & .menu-toogle {
       display: none;
@@ -32,19 +37,15 @@
 
     & > .menu-label {
       cursor: pointer;
-
-      width: 40px;
-      height: 40px;
-
+      width: 4em;
+      height: 3em;
       display: block;
-
       position: relative;
-
       user-select: none;
 
       & > .menu-hamburger {
         display: block;
-        width: 80%;
+        width: 60%;
         height: 2px;
         background: $bg-primary;
         position: relative;
@@ -85,9 +86,9 @@
 
       top: 0px;
       padding-top: 70px;
-      transform: translateX(100%);
+      transform: translateX(110%);
       transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
-      box-shadow: 0px 1em 20px rgba(229, 57, 69, 0.7);
+      box-shadow: 0px 1px 10px rgba(229, 57, 69, 0.7);
     }
 
     & > .navigation-list .navigation-list-item {

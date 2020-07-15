@@ -1,6 +1,8 @@
 body {
-  background-image: url("../assets/images/back-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: 100%, 100%;
-  background-position: bottom 100% left 0px;
+  background: url("../assets/images/wave.svg"),
+    url("../assets/images/wave-red.svg");
+  background-size: 85% auto, 100% auto;
+  // background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  // background-position: top top;
 }
