@@ -6,8 +6,8 @@
     <title>WR Express</title>
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo">
+    <header class="header" id="home">
+      <a href="#home" class="logo">
         <img src="./assets/images/icon-mobile.png" alt="WR Express logo" />
       </a>
 
@@ -36,8 +36,8 @@
     </header>
 
     <main>
-      <section class="welcome">
-        <h2>Entregas e coletas</h2>
+      <section class="home">
+        <h2 class="company-name">Entregas e coletas</h2>
         <p class="description">
           Servico agil, rapido, seguro que o mundo moderno precisa.
         </p>
@@ -129,6 +129,55 @@
           </a>
         </article>
       </section>
+
+      <section class="contact" id="contact">
+        <h2>Contato</h2>
+
+        <form action="#">
+          <input
+            type="text"
+            name="name"
+            class="input-name"
+            placeholder="Nome"
+          />
+          <input
+            type="email"
+            name="email"
+            class="input-email"
+            placeholder="Email"
+          />
+          <textarea
+            class="input-message"
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Sua mensagem"
+          ></textarea>
+
+          <button type="submit" class="button-submit">Enviar</button>
+        </form>
+
+        <div class="contact-details">
+          <h4>Telefone / Whatsapp</h4>
+          <p>51 98412-7878</p>
+          <h4>Email</h4>
+          <p>wrepress@gmail.com</p>
+          <h4>Endereco</h4>
+          <address>
+            171, Primeiro tiroteio a esquerda
+            <span>Gloria</span>
+            <span>Porto Alegre - RS</span>
+          </address>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <p>WR Express</p>
+      <div class="icons">
+        <img src="../src/assets/images/whatsapp.svg" alt="" srcset="" />
+        <img src="../src/assets/images/facebook-full.svg" alt="" srcset="" />
+      </div>
+    </footer>
   </body>
 </html>

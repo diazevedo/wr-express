@@ -13,6 +13,7 @@
     & .menu-toogle {
       display: none;
     }
+
     & .menu-toogle:checked ~ .menu-label {
       z-index: 3;
     }

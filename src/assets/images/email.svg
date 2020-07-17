@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.785" height="16" viewBox="0 0 16.785 16">
+  <g id="ui_icon" data-name="ui icon" transform="translate(0.393)">
+    <g id="mail" transform="translate(1 2)">
+      <path id="Shape" d="M1.4,0H12.6A1.4,1.4,0,0,1,14,1.4V9.8a1.4,1.4,0,0,1-1.4,1.4H1.4A1.4,1.4,0,0,1,0,9.8V1.4A1.4,1.4,0,0,1,1.4,0Z" fill="none" stroke="#b7bec6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Shape-2" data-name="Shape" d="M14,0,7,4.9,0,0" transform="translate(0 1.4)" fill="none" stroke="#b7bec6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

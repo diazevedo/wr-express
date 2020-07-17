@@ -1,6 +1,10 @@
-.welcome {
+.home {
   width: 80%;
   margin: 0 auto;
+
+  .company-name {
+    text-transform: uppercase;
+  }
 
   .description {
     width: 75%;
