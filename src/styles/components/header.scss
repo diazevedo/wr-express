@@ -1,100 +1,65 @@
 .header {
-  padding: 1em 0.5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 60px;
+  width: 100%;
+  // background-color: #005fff;
 
   .logo {
-    width: 50%;
-    align-self: end;
+    display: block;
+    float: left;
+    width: 70%;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    img {
+      max-width: 150px;
+      height: 55px;
+    }
   }
 
-  .navigation {
-    & .menu-toogle {
-      display: none;
-    }
+  #menu-btn {
+    display: none;
+  }
 
-    & .menu-toogle:checked ~ .menu-label {
-      z-index: 3;
-    }
+  .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 38px 20px;
 
-    & .menu-toogle:checked ~ .menu-label > .menu-hamburger {
-      background-color: transparent;
-    }
+    position: relative;
+    z-index: 3;
+    user-select: none;
+  }
 
-    & .menu-toogle:checked ~ .menu-label > .menu-hamburger:after {
-      transform: rotate(45deg);
-      top: 0;
-    }
+  .menu {
+    clear: both;
+    width: 0;
+    transition: width 0.2s ease-out;
+    margin: 0;
+    height: 100%;
+    padding-top: 20px;
+    position: absolute;
+    right: 0;
+    list-style: none;
+    padding-top: 4.5em;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(229, 57, 69, 0.7);
+    background: change-color($color: $bg-secondary, $alpha: 1);
+    z-index: 2;
+  }
 
-    & .menu-toogle:checked ~ .menu-label .menu-hamburger:before {
-      transform: rotate(-45deg);
-      top: 0;
-    }
+  .menu-list {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
 
-    & .menu-toogle:checked ~ .navigation-list {
-      transform: translateX(0);
-    }
-
-    & > .menu-label {
-      cursor: pointer;
-      width: 4em;
-      height: 3em;
+    a {
       display: block;
-      position: relative;
-      user-select: none;
+      padding: 20px 20px;
 
-      & > .menu-hamburger {
-        display: block;
-        width: 60%;
-        height: 2px;
-        background: $bg-primary;
-        position: relative;
-
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        transition: all 0.2s ease-out;
-        cursor: pointer;
-
-        &::before,
-        &::after {
-          content: "";
-          width: 100%;
-          height: 100%;
-          background: $bg-primary;
-          position: absolute;
-          transition: all 0.2s ease-out;
-        }
-
-        &::before {
-          top: -10px;
-        }
-
-        &::after {
-          top: 10px;
-        }
-      }
-    }
-
-    & > .navigation-list {
-      background: change-color($color: $bg-secondary, $alpha: 1);
-
-      width: 100vw;
-      position: absolute;
-      right: 0;
-
-      top: 0px;
-      padding-top: 70px;
-      transform: translateX(110%);
-      transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
-      box-shadow: 0px 1px 10px rgba(229, 57, 69, 0.7);
-    }
-
-    & > .navigation-list .navigation-list-item {
+      text-decoration: none;
       font-size: 22px;
       transition: all 0.2s linear;
+      color: #fff;
 
       &:hover,
       &focus {
@@ -102,20 +67,89 @@
         transform: scale(1.05);
       }
     }
+  }
 
-    .navigation-list-item-link {
+  .menu-list .menu-list-item:hover,
+  .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+
+  .menu-icon .nav-icon {
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: all 0.2s ease-out;
+    width: 22px;
+    background: $bg-third;
+    // background: #444fff;
+  }
+
+  .menu-icon {
+    .nav-icon:before,
+    .nav-icon:after {
+      content: "";
+      background: $bg-third;
       display: block;
-      padding: 35px;
-      text-transform: uppercase;
-      text-align: center;
-      color: $text-primary;
-      // border: 0.25em solid #fff;
-      text-decoration: none;
-      transition: all 0.3s ease-in-out;
-
-      &:active {
-        transform: translateY(5px);
-      }
+      height: 100%;
+      position: absolute;
+      transition: all 0.2s ease-out;
+      width: 100%;
     }
+
+    .nav-icon:before {
+      top: 0.75em;
+    }
+
+    .nav-icon:after {
+      top: -0.75em;
+    }
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+.header .menu-btn:checked ~ .menu {
+  width: 100vw;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/* 48em = 768px @ 16pt font */
+
+@media (min-width: 48em) {
+  .header {
+    background-color: #444fff;
+  }
+
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-width: none;
+  }
+
+  .header .menu-icon {
+    display: none;
   }
 }

@@ -1,46 +1,40 @@
 .home {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  clear: both;
 
-  .company-name {
-    text-transform: uppercase;
+  .company-job {
+    @include header__two;
   }
 
   .description {
-    width: 75%;
-    line-height: 3rem;
-    color: $text-description;
-    font-size: 1.75rem;
+    @include text;
     font-weight: 300;
+    margin-top: 1rem;
   }
 
-  .button-contact {
-    display: block;
-    width: 10rem;
-    height: 5rem;
-    background-color: #fff;
-    margin: 65px auto 50px;
-    border-radius: 2px;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 15px;
-    text-transform: uppercase;
-    color: rgb(213, 60, 71);
-    font-weight: 500;
-    cursor: pointer;
-
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 00px 15px rgba(0, 0, 0, 0.5);
-    }
-  }
-
-  & > h3 {
-    margin-top: 3.5rem;
+  .wrapper-button {
+    position: absolute;
+    background-color: rgba(213, 60, 71, 0.9);
+    margin-top: 20px;
+    left: 0;
+    right: 0;
+    padding: 30px;
     text-align: center;
     color: $text-primary;
+
+    & .contact-us {
+      @include header__three;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 300;
+
+      @include sm {
+        font-size: 2.2rem;
+      }
+    }
   }
 
   .phone {

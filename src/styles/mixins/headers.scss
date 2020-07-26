@@ -1,0 +1,26 @@
+@mixin header__two {
+  font-size: 2.8rem;
+  color: $text-secondary;
+  text-transform: uppercase;
+
+  @include sm {
+    font-size: 3rem;
+  }
+}
+
+@mixin header__three {
+  font-size: 2.4rem;
+
+  @include sm {
+    font-size: 2.6rem;
+  }
+}
+
+@mixin header__four {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+
+  @include sm {
+    font-size: 2rem;
+  }
+}

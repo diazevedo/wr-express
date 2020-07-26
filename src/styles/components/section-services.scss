@@ -1,11 +1,13 @@
 .services {
-  padding: 0 20px;
+  padding: 10px 20px;
+  margin-top: 170px;
 
-  & > h2 {
-    margin-top: 10px;
+  & > .our-services {
+    @include header__two;
     text-align: center;
     text-transform: uppercase;
-    color: #222d31;
+    width: 50%;
+    margin: 0 auto;
   }
 
   .service {
@@ -15,17 +17,16 @@
     padding: 10px;
 
     & > h3 {
+      @include header__three;
       text-transform: uppercase;
       margin-bottom: 10px;
     }
 
     & .service-description {
+      @include text;
       margin-bottom: 20px;
-      font-size: 16px;
       font-weight: 300;
       text-align: justify;
-      color: #4f5358;
-      font-family: "Poppins", sans-serif;
     }
 
     & .service-image {

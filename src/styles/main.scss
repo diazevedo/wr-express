@@ -4,6 +4,11 @@
 @import "./base/normalize.scss";
 @import "./base/breakpoints.scss";
 
+// mixins
+@import "./mixins/headers.scss";
+@import "./mixins/text.scss";
+
+// components
 @import "./components/body.scss";
 @import "./components/header.scss";
 @import "./components/section-home.scss";

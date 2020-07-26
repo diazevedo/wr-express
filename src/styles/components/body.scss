@@ -1,8 +1,9 @@
 body {
-  background: url("../assets/images/wave.svg"),
-    url("../assets/images/wave-red.svg");
-  background-size: 85% auto, 100% auto;
-  // background-size: 100%, 100%;
-  background-repeat: no-repeat, no-repeat;
-  // background-position: top top;
+  // background-image: url("../assets/images/background-mobile.svg");
+  // background-repeat: no-repeat;
+  // background-position: top;
+
+  @include sm {
+    background-size: 80% auto, 100% auto;
+  }
 }
