@@ -6,13 +6,22 @@
   @include sm {
     font-size: 3rem;
   }
+
+  @include md {
+    font-size: 3.2rem;
+  }
 }
 
 @mixin header__three {
   font-size: 2.4rem;
+  text-transform: uppercase;
 
   @include sm {
     font-size: 2.6rem;
+  }
+
+  @include md {
+    font-size: 2.8rem;
   }
 }
 
@@ -22,5 +31,9 @@
 
   @include sm {
     font-size: 2rem;
+  }
+
+  @include md {
+    font-size: 2.2rem;
   }
 }

@@ -11,19 +11,17 @@ footer {
   justify-content: space-around;
 
   p {
-    font-size: 14px;
-  }
+    font-size: 1.4rem;
 
-  .icons {
-    // padding: 10px;
+    @include md {
+      font-size: 1.6rem;
+    }
   }
 
   img {
     display: inline-block;
-
     width: 30px;
     height: 30px;
-
     cursor: pointer;
   }
 }

@@ -2,18 +2,38 @@
   width: 100%;
   padding: 0 20px;
   clear: both;
+  // background-color: wheat;
+
+  @include md {
+    width: 70%;
+    padding-left: 6rem;
+  }
 
   .company-job {
     @include header__two;
+
+    .red {
+      color: #f13945;
+    }
+
+    @include md {
+      margin-top: 2rem;
+      font-size: 5rem;
+    }
   }
 
   .description {
     @include text;
     font-weight: 300;
     margin-top: 1rem;
+    font-family: "Oswald", sans-serif;
+
+    @include md {
+      font-size: 1.8rem;
+    }
   }
 
-  .wrapper-button {
+  .wrapper-contact-us {
     position: absolute;
     background-color: rgba(213, 60, 71, 0.9);
     margin-top: 20px;
@@ -22,6 +42,11 @@
     padding: 30px;
     text-align: center;
     color: $text-primary;
+
+    @include md {
+      background: none;
+      margin-top: 3rem;
+    }
 
     & .contact-us {
       @include header__three;
