@@ -7,10 +7,12 @@
 // mixins
 @import "./mixins/headers.scss";
 @import "./mixins/text.scss";
+@import "./mixins/visuals.scss";
 
 // components
 @import "./components/body.scss";
 @import "./components/header.scss";
+@import "./components/main-element.scss";
 @import "./components/section-home.scss";
 @import "./components/section-services.scss";
 @import "./components/section-contact.scss";

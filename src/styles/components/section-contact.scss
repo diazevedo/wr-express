@@ -1,19 +1,19 @@
 .contact {
-  background-color: #e53945;
-  padding: 20px;
+  background-color: $bg-secondary;
+  padding: 2rem;
   width: 100%;
 
   & * {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
   }
 
-  & > h2 {
+  .contact-title {
     @include header__two;
     color: #fff;
     text-align: center;
 
     @include md {
-      margin-bottom: 40px;
+      margin-bottom: 4rem;
     }
   }
 
@@ -33,7 +33,7 @@
 
     @include lg {
       width: 100%;
-      padding: 0 50px;
+      padding: 0 5rem;
       padding-left: 0;
     }
 
@@ -42,10 +42,10 @@
       background-repeat: no-repeat;
       background-position: left 15px center;
       border: none;
-      padding-left: 45px;
+      padding-left: 4.5rem;
       height: 50px;
       display: inline-block;
-      // border-radius: 2px;
+      font-family: "Poppins", sans-serif;
 
       @include md {
         width: 48%;
@@ -65,17 +65,24 @@
     }
 
     .input-message {
+      font-family: "Poppins", sans-serif;
       width: 100%;
       padding: 20px;
       padding-left: 45px;
       background-repeat: no-repeat;
       background-position: left 15px top 20px;
       background-image: url("../assets/images/message.svg");
-      // border-radius: 2px;
+
+      font-size: 1.2rem;
 
       @include lg {
         height: 200px;
       }
+    }
+
+    & input:focus,
+    & .input-message:focus {
+      @include shadow;
     }
 
     .button-submit {
@@ -83,15 +90,15 @@
       height: 50px;
       background-color: $text-secondary;
       border: none;
-      // border-radius: 2px;
-      color: #fff;
+
+      color: $text-primary;
       text-transform: uppercase;
       font-size: 16px;
       cursor: pointer;
       letter-spacing: 1px;
 
       &:hover {
-        box-shadow: 0px 00px 15px rgba(0, 0, 0, 0.5);
+        @include shadow;
       }
 
       @include lg {
@@ -123,21 +130,17 @@
 
       @include lg {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 2rem;
       }
     }
 
-    h4 {
+    .contact-details-title {
       @include header__four;
       margin-bottom: 5px;
       font-weight: 600;
       border-bottom: 2px solid black;
       border-image: linear-gradient(to right, #000 10%, rgba(0, 0, 0, 0) 10%);
       border-image-slice: 1;
-
-      @include md {
-        // width: 25%;
-      }
     }
 
     p,

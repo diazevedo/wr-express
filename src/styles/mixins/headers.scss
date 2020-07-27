@@ -1,3 +1,16 @@
+@mixin header__one {
+  font-size: 3rem;
+  text-transform: uppercase;
+
+  @include sm {
+    font-size: 3.2rem;
+  }
+
+  @include md {
+    font-size: 3.4rem;
+  }
+}
+
 @mixin header__two {
   font-size: 2.8rem;
   color: $text-secondary;

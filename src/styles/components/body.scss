@@ -1,4 +1,8 @@
 body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1350px;
+
   @include md {
     background: url("../assets/images/wave.svg"),
       url("../assets/images/wave-red.svg");
@@ -6,5 +10,25 @@ body {
     background-repeat: no-repeat;
     background-position-x: -50px, center;
     background-position-y: -40px, -40px;
+  }
+
+  @include lg {
+    background-position-x: -40px, center;
+    background-position-y: -130px, -200px;
+  }
+
+  @media (min-width: 1150px) {
+    background-position-x: -80px, center;
+    background-position-y: -200px, -220px;
+  }
+
+  @media (min-width: 1350px) {
+    background-position-x: -50px, center;
+    background-position-y: -300px, -350px;
+  }
+
+  @media (min-width: 1570px) {
+    background-position-x: -60px, center;
+    background-position-y: -550px, -800px;
   }
 }

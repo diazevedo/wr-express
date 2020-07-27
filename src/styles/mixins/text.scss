@@ -1,9 +1,9 @@
 @mixin text {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: $text-description;
   font-family: "Poppins", sans-serif;
 
   @include sm {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }

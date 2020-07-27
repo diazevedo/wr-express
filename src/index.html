@@ -9,41 +9,49 @@
     <header class="header">
       <a href="#home" class="logo">
         <img
-          src="./assets/images/logo-new.svg"
+          src="./assets/images/logo.svg"
           alt="WR Express logo"
           class="logo-image"
         />
       </a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn">
+
+      <input class="header-menu-btn" type="checkbox" id="menu-btn" />
+      <label class="header-menu-icon" for="menu-btn">
         <span class="nav-icon"></span>
       </label>
-      <ul class="menu">
-        <li class="menu-list"><a href="#services">inicio</a></li>
-        <li class="menu-list"><a href="#forget">servicos</a></li>
-        <li class="menu-list"><a href="#about">sobre</a></li>
-        <li class="menu-list"><a href="#contact">contato</a></li>
+
+      <ul class="header-menu-list">
+        <li class="header-menu-list-item">
+          <a class="header-menu-list-item-link" href="#services">início</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a class="header-menu-list-item-link" href="#forget">serviços</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a class="header-menu-list-item-link" href="#contact">contato</a>
+        </li>
       </ul>
     </header>
 
     <main>
       <section class="home">
-        <h2 class="company-job"><span class="red">Entregas e</span> coletas</h2>
-        <p class="description">
-          Servico agil, rapido, seguro que o mundo moderno precisa.
+        <h1 class="home-company-job-title">
+          <span class="red">Entregas e</span> coletas
+        </h1>
+        <p class="home-job-description">
+          Serviço ágil, rapido e seguro que o mundo moderno precisa.
         </p>
-        <div class="wrapper-contact-us">
-          <!-- <a href="#contact" class="button-contact">Contato</a> -->
-          <h3 class="contact-us">Entre em contato</h3>
-          <p><strong>51 99898-8471</strong></p>
+        <div class="home-wrapper-contact-us">
+          <h3 class="contact-us-title">Entre em contato</h3>
+          <p class="contact-us-number"><strong>51 99898-8471</strong></p>
         </div>
       </section>
 
       <section class="services">
-        <h2 class="our-services">Nossos Servicos</h2>
+        <h2 class="services-our-services">Nossos Serviços</h2>
 
-        <article class="service">
-          <div class="service-wrapper-float">
+        <article class="services-service">
+          <div class="service-info-wrapper-float">
             <h3 class="service-title">Motoboy</h3>
 
             <p class="service-description">
@@ -52,7 +60,7 @@
               destino.
             </p>
 
-            <div class="wrapper-positioned-button">
+            <div class="service-btn-wrapper-positioned">
               <a href="#contact" class="button-find-more">
                 saiba mais
               </a>
@@ -60,22 +68,24 @@
           </div>
 
           <img
-            src="./assets/images/ok-signal.png"
+            src="./assets/images/motoboy.png"
             alt="Motoboy"
             class="service-image"
           />
         </article>
 
-        <article class="service">
-          <div class="service-wrapper-float">
-            <h3 class="service-title">Motoboy</h3>
+        <article class="services-service">
+          <div class="service-info-wrapper-float">
+            <h3 class="service-title">Moto fixa</h3>
 
             <p class="service-description">
-              Com motoboys disponíveis 24 horas por dia 7 dias por semana, voce
-              tem a certeza que o seu negocio ou sua encomenda chegara ao
-              destino.
+              Se seu negócio ou voce necessita de um serviço exclusivo a WR
+              EXPRESS pode suprir sua necessidade. Voce pode optar contratar um
+              motoboy para um dia, semana ou mês. Entre em contato para explicar
+              sua necessidade.
             </p>
-            <div class="wrapper-positioned-button">
+
+            <div class="service-btn-wrapper-positioned">
               <a href="#contact" class="button-find-more">
                 saiba mais
               </a>
@@ -83,22 +93,23 @@
           </div>
 
           <img
-            src="./assets/images/ok-signal.png"
-            alt="Motoboy"
+            src="./assets/images/moto-fixa.png"
+            alt="Moto fixa"
             class="service-image"
           />
         </article>
 
-        <article class="service">
-          <div class="service-wrapper-float">
-            <h3 class="service-title">Motoboy</h3>
+        <article class="services-service">
+          <div class="service-info-wrapper-float">
+            <h3 class="service-title">Logistica</h3>
 
             <p class="service-description">
-              Com motoboys disponíveis 24 horas por dia 7 dias por semana, voce
-              tem a certeza que o seu negocio ou sua encomenda chegara ao
+              Com experiencia e conhecimento necessário podemos ajudar a
+              organizar, separar, e despachar documentos, medicamentos,
+              convites, etc. Tudo isso com a segurança de seu produto chegara no
               destino.
             </p>
-            <div class="wrapper-positioned-button">
+            <div class="service-btn-wrapper-positioned">
               <a href="#contact" class="button-find-more">
                 saiba mais
               </a>
@@ -106,22 +117,23 @@
           </div>
 
           <img
-            src="./assets/images/ok-signal.png"
-            alt="Motoboy"
+            src="./assets/images/logistics.png"
+            alt="Logistica"
             class="service-image"
           />
         </article>
 
-        <article class="service">
-          <div class="service-wrapper-float">
-            <h3 class="service-title">Motoboy</h3>
+        <article class="services-service">
+          <div class="service-info-wrapper-float">
+            <h3 class="service-title">Carro</h3>
 
             <p class="service-description">
-              Com motoboys disponíveis 24 horas por dia 7 dias por semana, voce
-              tem a certeza que o seu negocio ou sua encomenda chegara ao
-              destino.
+              Se necessita transportar items maiores a WR Express estará pronta
+              para ajudar. Entre em contato e explique sua necessidade, nosso
+              time encontrará a melhor opção para você.
             </p>
-            <div class="wrapper-positioned-button">
+
+            <div class="service-btn-wrapper-positioned">
               <a href="#contact" class="button-find-more">
                 saiba mais
               </a>
@@ -129,15 +141,15 @@
           </div>
 
           <img
-            src="./assets/images/ok-signal.png"
-            alt="Motoboy"
+            src="./assets/images/car.png"
+            alt="Carro"
             class="service-image"
           />
         </article>
       </section>
 
       <section class="contact" id="contact">
-        <h2>Contato</h2>
+        <h2 class="contact-title">Contato</h2>
 
         <div class="contact-content">
           <form action="#" class="contact__form">
@@ -161,21 +173,21 @@
               placeholder="Sua mensagem"
             ></textarea>
 
-            <button type="submit" class="button-submit">Enviar</button>
+            <button type="button" class="button-submit">Enviar</button>
           </form>
 
           <div class="contact-details">
             <div class="contact-details-item">
-              <h4>Telefone / Whatsapp</h4>
+              <h4 class="contact-details-title">Telefone / Whatsapp</h4>
               <p>51 98412-7878</p>
             </div>
             <div class="contact-details-item">
-              <h4>Email</h4>
+              <h4 class="contact-details-title">Email</h4>
 
               <p>wrepress@gmail.com</p>
             </div>
             <div class="contact-details-item">
-              <h4>Endereco</h4>
+              <h4 class="contact-details-title">Endereco</h4>
 
               <address>
                 171, Primeiro tiroteio a esquerda
@@ -188,10 +200,10 @@
     </main>
 
     <footer>
-      <p>WR Express</p>
-      <div class="icons">
-        <img src="../src/assets/images/whatsapp.svg" alt="" srcset="" />
-        <img src="../src/assets/images/facebook-full.svg" alt="" srcset="" />
+      <p class="footer-paragraph">WR Express</p>
+      <div class="footer-icons">
+        <img src="../src/assets/images/whatsapp.svg" alt="Whatsapp icon" />
+        <img src="../src/assets/images/facebook-full.svg" alt="Facebook icon" />
       </div>
     </footer>
   </body>

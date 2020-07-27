@@ -13,7 +13,7 @@
     display: block;
     float: left;
     width: auto;
-    padding: 10px;
+    padding: 1rem;
     text-decoration: none;
 
     .logo-image {
@@ -30,89 +30,30 @@
     }
   }
 
-  .menu-icon {
+  .header-menu-btn {
+    display: none;
+  }
+
+  .header-menu-icon {
     cursor: pointer;
     float: right;
-    padding: 38px 20px;
+    padding: 3.8rem 2rem;
 
     position: relative;
     z-index: 3;
     user-select: none;
-  }
-
-  .menu {
-    clear: both;
-    width: 0;
-    transition: width 0.2s ease-out;
-    margin: 0;
-    height: 100%;
-    padding-top: 20px;
-    position: absolute;
-    right: 0;
-    padding-top: 4.5em;
-    overflow: hidden;
-    box-shadow: 0px 1px 10px rgba(229, 57, 69, 0.7);
-    background: change-color($color: $bg-secondary, $alpha: 1);
-    z-index: 2;
 
     @include md {
-      width: 280px;
-      position: static;
-      max-width: none;
-      height: auto;
-      padding-top: 0;
-
-      box-shadow: none;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: none;
-    }
-
-    .menu-list {
-      text-align: center;
-      text-transform: uppercase;
-      padding: 10px;
-
-      a {
-        display: block;
-        padding: 20px 20px;
-
-        text-decoration: none;
-        font-size: 22px;
-        transition: all 0.2s linear;
-        color: #fff;
-
-        &:hover,
-        &focus {
-          background: darken($bg-secondary, 20%);
-          transform: scale(1.05);
-        }
-
-        @include md {
-          font-size: 1.4rem;
-          background: none;
-          padding: 0;
-          letter-spacing: 1px;
-          font-weight: 300;
-
-          &:hover,
-          &focus {
-            background: none;
-            text-decoration: underline;
-          }
-        }
-      }
+      display: none;
     }
   }
 
-  .menu-list .menu-list-item:hover,
-  .menu-btn:hover {
-    background-color: #f4f4f4;
+  .header-menu-list-item .header-menu-list-item-item:hover,
+  .header-menu-btn:hover {
+    background-color: $bg-primary;
   }
 
-  .menu-icon .nav-icon {
+  .header-menu-icon .nav-icon {
     display: block;
     height: 2px;
     position: relative;
@@ -121,7 +62,7 @@
     background: $bg-third;
   }
 
-  .menu-icon {
+  .header-menu-icon {
     .nav-icon:before,
     .nav-icon:after {
       content: "";
@@ -142,42 +83,88 @@
     }
   }
 
-  .menu-btn {
-    display: none;
-  }
-
-  & .menu-btn:checked ~ .menu {
+  .header-menu-btn:checked ~ .header-menu-list {
     width: 100vw;
   }
 
-  & .menu-btn:checked ~ .menu-icon .nav-icon {
+  .header-menu-btn:checked ~ .header-menu-icon .nav-icon {
     background: transparent;
   }
 
-  & .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  .header-menu-btn:checked ~ .header-menu-icon .nav-icon:before {
     transform: rotate(-45deg);
     top: 0;
   }
 
-  & .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  .header-menu-btn:checked ~ .header-menu-icon .nav-icon:after {
     transform: rotate(45deg);
     top: 0;
   }
 
-  @include md {
-    & ul {
-      float: right;
+  .header-menu-list {
+    clear: both;
+    width: 0;
+    transition: width 0.2s ease-out;
+    margin: 0;
+    height: 100%;
+    padding-top: 2rem;
+    position: absolute;
+    right: 0;
+    padding-top: 4.5em;
+    overflow: hidden;
+    @include shadow(rgba(229, 57, 69, 0.7));
+    background: change-color($color: $bg-secondary, $alpha: 1);
+    z-index: 2;
+
+    @include md {
+      width: 280px;
+      position: static;
+      max-width: none;
+      height: auto;
+      padding-top: 0;
+
+      box-shadow: none;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
     }
 
-    & li a {
-      padding: 20px 30px;
-    }
+    .header-menu-list-item {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 1rem;
 
-    & .menu-icon {
-      display: none;
+      .header-menu-list-item-link {
+        display: block;
+        padding: 2rem;
+
+        text-decoration: none;
+        font-size: 22px;
+        transition: all 0.2s linear;
+        color: $text-primary;
+
+        &:hover,
+        &:focus {
+          background: darken($bg-secondary, 20%);
+          transform: scale(1.05);
+        }
+
+        @include md {
+          font-size: 1.4rem;
+          background: none;
+          padding: 0;
+          letter-spacing: 1px;
+          font-weight: 300;
+
+          &:hover,
+          &focus {
+            background: none;
+            text-decoration: underline;
+          }
+        }
+      }
     }
   }
-  //end of .header
 }
-
-/* 48em = 768px @ 16pt font */

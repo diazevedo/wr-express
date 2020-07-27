@@ -1,16 +1,16 @@
 .services {
-  padding: 10px 20px;
-  margin-top: 160px;
+  padding: 1rem 2rem;
+  margin-top: 16rem;
 
   @include md {
     margin-top: 25%;
   }
 
-  @media (min-width: 860px) {
-    margin-top: 25%;
+  @include lg {
+    margin-top: 20%;
   }
 
-  & > .our-services {
+  .services-our-services {
     @include header__two;
     text-align: center;
     width: 50%;
@@ -21,34 +21,31 @@
     }
   }
 
-  .service {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
-    margin: 20px 0px;
-    padding: 10px;
-    position: relative;
-
+  .services-service {
     max-width: 800px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0px;
+    padding: 1rem;
+    position: relative;
 
     @include md {
       background-color: $text-primary;
       padding: 0;
-      height: 261px;
+      height: 260px;
       position: initial;
       width: 90%;
-
-      margin: 20px auto;
+      margin: 2rem auto;
     }
 
-    .service-wrapper-float {
+    .service-info-wrapper-float {
       @include md {
         width: 60%;
         float: right;
-        padding: 30px 70px;
+        padding: 3rem 7rem;
       }
     }
 
-    &:nth-child(odd) .service-wrapper-float {
+    &:nth-child(odd) .service-info-wrapper-float {
       @include md {
         float: left;
       }
@@ -57,30 +54,32 @@
     .service-title {
       @include header__three;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 1rem;
 
       @include md {
         font-size: 20px;
         text-transform: uppercase;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
       }
     }
 
-    & .service-description {
+    .service-description {
       @include text;
-      margin-bottom: 20px;
+
+      margin-bottom: 2rem;
       font-weight: 300;
+
       text-align: justify;
 
       @include md {
         height: 40%;
-        font-size: 12px;
-        margin-bottom: 35px;
+        font-size: 1.2rem;
+        margin-bottom: 3.5rem;
       }
     }
 
     & .service-image {
-      margin-bottom: 75px;
+      margin-bottom: 7.5rem;
       width: 100%;
 
       @include md {
@@ -90,38 +89,38 @@
       }
     }
 
-    .wrapper-positioned-button {
+    .service-btn-wrapper-positioned {
       width: 100%;
       left: 0;
-      padding: 10px;
+      padding: 1rem;
       position: absolute;
       bottom: 0;
+
       @include md {
         position: initial;
-        padding: 0px;
+        padding: 0;
       }
     }
 
-    & .button-find-more {
+    .button-find-more {
       display: block;
-      padding: 20px;
+      padding: 2rem;
       width: 100%;
       text-align: center;
-      border-radius: 2px;
       font-size: 16px;
       background-color: $bg-secondary;
-      color: #fff;
+      color: $text-primary;
       text-transform: uppercase;
       transition: all 0.3s ease-in-out;
 
       &:hover {
         transform: scale(1.025);
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+        @include shadow;
       }
 
       @include md {
         width: 40%;
-        padding: 5px 10px;
+        padding: 0.5rem 1rem;
         font-size: 14px;
         font-weight: 300;
         letter-spacing: 1px;
