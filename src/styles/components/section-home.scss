@@ -59,6 +59,10 @@
       margin-top: 8%;
     }
 
+    @media (min-width: 1570px) {
+      margin-top: 2%;
+    }
+
     .contact-us-title {
       @include header__three;
     }

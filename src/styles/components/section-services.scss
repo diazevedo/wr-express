@@ -10,6 +10,10 @@
     margin-top: 20%;
   }
 
+  @media (min-width: 1570px) {
+    margin-top: 15%;
+  }
+
   .services-our-services {
     @include header__two;
     text-align: center;
@@ -41,7 +45,7 @@
       @include md {
         width: 60%;
         float: right;
-        padding: 3rem 7rem;
+        padding: 3rem;
       }
     }
 

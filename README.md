@@ -1,12 +1,15 @@
-https://inspirationalpixels.com/creating-a-responsive-menu-with-html-css-jquery/
+<h1 align="center">
+  <img alt="WR Express Logo" title="WR Express" src=".github/logo.svg" width="300px" />
+</h1>
 
-https://github.com/diazevedo/short-link/blob/master/src/styles/scss/components/header.scss
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/diazevedo/wr-express">
 
-https://medium.com/level-up-web/20-responsive-navigation-solutions-examples-codes-21644390afeb
+  <a href="https://github.com/diazevedo">
+    <img alt="Made by Di Azevedo" src="https://img.shields.io/badge/made%20by-DiAzevedo-%2325b0e6">
+  </a>
 
-https://codepen.io/TimPietrusky/pen/gqlhA
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
+</p>
 
-https://sass-lang.com/guide
-
-//include into to body
-font-family: 'Oswald', sans-serif;
+<p>This website was developed for <a href="#">WR Express</a>.</p>
