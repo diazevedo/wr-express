@@ -116,6 +116,7 @@
       color: $text-primary;
       text-transform: uppercase;
       transition: all 0.3s ease-in-out;
+      font-weight: 400;
 
       &:hover {
         transform: scale(1.025);
@@ -126,7 +127,6 @@
         width: 40%;
         padding: 0.5rem 1rem;
         font-size: 14px;
-        font-weight: 300;
         letter-spacing: 1px;
         position: initial;
         transform: translateX(0);

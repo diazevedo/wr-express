@@ -9,7 +9,7 @@ body {
     background-size: 70% auto, 100% auto;
     background-repeat: no-repeat;
     background-position-x: -50px, center;
-    background-position-y: -40px, -40px;
+    background-position-y: -40px, 0;
   }
 
   @include lg {
@@ -19,7 +19,7 @@ body {
 
   @media (min-width: 1150px) {
     background-position-x: -80px, center;
-    background-position-y: -200px, -220px;
+    background-position-y: -200px, -275px;
   }
 
   @media (min-width: 1350px) {
