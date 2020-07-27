@@ -31,4 +31,9 @@ body {
     background-position-x: -40px, center;
     background-position-y: -450px, -600px;
   }
+
+  @media (min-width: 1700px) {
+    background-position-x: -50px, center;
+    background-position-y: -500px, -700px;
+  }
 }
