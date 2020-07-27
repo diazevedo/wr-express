@@ -1,9 +1,4 @@
 html {
-  box-sizing: border-box;
-  font-size: 10px;
-  height: 100%;
-  min-height: 700px;
-  max-height: 1175px;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -33,7 +28,6 @@ ul {
 body {
   height: 100%;
   width: 100%;
-  max-width: 975px;
   margin: 0 auto;
   font-family: "Oswald", sans-serif;
 }

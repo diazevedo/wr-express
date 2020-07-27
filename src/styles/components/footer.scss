@@ -10,6 +10,12 @@ footer {
   flex-direction: column;
   justify-content: space-around;
 
+  @include lg {
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+  }
+
   p {
     font-size: 1.4rem;
 
@@ -23,5 +29,9 @@ footer {
     width: 30px;
     height: 30px;
     cursor: pointer;
+
+    @include lg {
+      margin-right: 20px;
+    }
   }
 }

@@ -2,7 +2,6 @@
   width: 100%;
   padding: 0 20px;
   clear: both;
-  // background-color: wheat;
 
   @include md {
     width: 70%;
@@ -45,7 +44,11 @@
 
     @include md {
       background: none;
-      margin-top: 3rem;
+      margin-top: 7.5%;
+    }
+
+    @media (min-width: 860px) {
+      margin-top: 12%;
     }
 
     & .contact-us {

@@ -3,7 +3,11 @@
   margin-top: 160px;
 
   @include md {
-    margin-top: 160px;
+    margin-top: 25%;
+  }
+
+  @media (min-width: 860px) {
+    margin-top: 25%;
   }
 
   & > .our-services {
@@ -23,6 +27,8 @@
     margin: 20px 0px;
     padding: 10px;
     position: relative;
+
+    max-width: 800px;
 
     @include md {
       background-color: $text-primary;

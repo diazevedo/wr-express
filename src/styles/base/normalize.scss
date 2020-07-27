@@ -1,5 +1,11 @@
 html {
   scroll-behavior: smooth;
+  min-height: 700px;
+  max-height: 1175px;
+  max-width: 1175px;
+  box-sizing: border-box;
+  font-size: 10px;
+  height: 100%;
 }
 
 h1 {

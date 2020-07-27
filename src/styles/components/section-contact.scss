@@ -1,7 +1,7 @@
 .contact {
   background-color: #e53945;
   padding: 20px;
-  clear: both;
+  width: 100%;
 
   & * {
     margin-bottom: 15px;
@@ -11,55 +11,120 @@
     @include header__two;
     color: #fff;
     text-align: center;
-  }
 
-  & input {
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: left 15px center;
-    border: none;
-    padding-left: 45px;
-    height: 50px;
-    display: block;
-    border-radius: 2px;
-  }
-
-  .input-name {
-    background-image: url("../assets/images/person.svg");
-  }
-
-  .input-email {
-    background-image: url("../assets/images/email.svg");
-  }
-
-  .input-message {
-    width: 100%;
-    padding: 20px;
-    padding-left: 45px;
-    background-repeat: no-repeat;
-    background-position: left 15px top 20px;
-    background-image: url("../assets/images/message.svg");
-    border-radius: 2px;
-  }
-
-  .button-submit {
-    width: 100%;
-    height: 50px;
-    background-color: $text-secondary;
-    border: none;
-    border-radius: 2px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 16px;
-    cursor: pointer;
-
-    &:hover {
-      box-shadow: 0px 00px 15px rgba(0, 0, 0, 0.5);
+    @include md {
+      margin-bottom: 40px;
     }
   }
+
+  .contact-content {
+    @include lg {
+      display: flex;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  .contact__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include lg {
+      width: 100%;
+      padding: 0 50px;
+      padding-left: 0;
+    }
+
+    & input {
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: left 15px center;
+      border: none;
+      padding-left: 45px;
+      height: 50px;
+      display: inline-block;
+      // border-radius: 2px;
+
+      @include md {
+        width: 48%;
+      }
+
+      @include lg {
+        height: 40px;
+      }
+    }
+
+    .input-name {
+      background-image: url("../assets/images/person.svg");
+    }
+
+    .input-email {
+      background-image: url("../assets/images/email.svg");
+    }
+
+    .input-message {
+      width: 100%;
+      padding: 20px;
+      padding-left: 45px;
+      background-repeat: no-repeat;
+      background-position: left 15px top 20px;
+      background-image: url("../assets/images/message.svg");
+      // border-radius: 2px;
+
+      @include lg {
+        height: 200px;
+      }
+    }
+
+    .button-submit {
+      width: 100%;
+      height: 50px;
+      background-color: $text-secondary;
+      border: none;
+      // border-radius: 2px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 16px;
+      cursor: pointer;
+      letter-spacing: 1px;
+
+      &:hover {
+        box-shadow: 0px 00px 15px rgba(0, 0, 0, 0.5);
+      }
+
+      @include lg {
+        width: 150px;
+        height: 40px;
+      }
+    }
+  }
+
   .contact-details {
     & * {
       margin-bottom: 10px;
+    }
+
+    @include md {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @include lg {
+      flex-direction: column;
+    }
+
+    .contact-details-item {
+      @include md {
+        width: 50%;
+      }
+
+      @include lg {
+        width: 100%;
+        padding: 0 20px;
+      }
     }
 
     h4 {
@@ -69,6 +134,10 @@
       border-bottom: 2px solid black;
       border-image: linear-gradient(to right, #000 10%, rgba(0, 0, 0, 0) 10%);
       border-image-slice: 1;
+
+      @include md {
+        // width: 25%;
+      }
     }
 
     p,
@@ -83,6 +152,10 @@
 
       span {
         display: block;
+
+        @include sm {
+          display: initial;
+        }
       }
     }
   }
